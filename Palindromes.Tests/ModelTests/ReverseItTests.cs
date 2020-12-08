@@ -17,7 +17,7 @@ namespace Palindromes.Tests
     public void IsReverseIt_ReverseArray_Reverse()
     {
       ReverseIt testReverseIt = new ReverseIt();
-      CollectionAssert.AreEqual(new char[]{'o', 'l', 'l', 'e', 'h'}, testReverseIt.IsReverseIt("hello"));
+      CollectionAssert.AreEqual(new char[]{'o', 'l', 'l', 'e', 'h'}, testReverseIt.IsReverseArray(new char[]{'h', 'e', 'l', 'l', 'o'}));
     }
   }
 }

@@ -1,3 +1,4 @@
+using System;
 namespace Palindromes.Models
 {
   public class ReverseIt
@@ -6,6 +7,11 @@ namespace Palindromes.Models
     {
         
         char[] wordArray = word.ToCharArray();
+        return wordArray;
+    }
+
+    public char[] IsReverseArray(char[] wordArray)
+    {
         Array.Reverse(wordArray);
         return wordArray;
     }
