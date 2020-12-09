@@ -15,5 +15,23 @@ namespace Palindromes.Models
         Array.Reverse(wordArray);
         return wordArray;
     }
+
+    public string IsReverseStr(char[] wordArray)
+    {
+        string finalOutput = new string(wordArray);
+        return finalOutput;
+    }
+    public bool IsPalindrome(string finalOutput, string word)
+    {
+        if (finalOutput == word)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
   }
 } 

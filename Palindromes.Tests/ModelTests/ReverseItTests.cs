@@ -19,5 +19,19 @@ namespace Palindromes.Tests
       ReverseIt testReverseIt = new ReverseIt();
       CollectionAssert.AreEqual(new char[]{'o', 'l', 'l', 'e', 'h'}, testReverseIt.IsReverseArray(new char[]{'h', 'e', 'l', 'l', 'o'}));
     }
+
+    [TestMethod]
+    public void IsReverseIt_ReverseArrayToStr_ToString()
+    {
+      ReverseIt testReverseIt = new ReverseIt();
+      Assert.AreEqual(new string("olleh") , testReverseIt.IsReverseStr(new char[]{'o', 'l', 'l', 'e', 'h'}));
+    }
+
+    [TestMethod]
+    public void IsReverseIt_CompareRevWord_False()
+    {
+      ReverseIt testReverseIt = new ReverseIt();
+      Assert.AreEqual(false, testReverseIt.IsPalindrome("olleh", "hello"));
+    }
   }
 }
