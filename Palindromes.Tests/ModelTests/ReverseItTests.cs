@@ -33,5 +33,12 @@ namespace Palindromes.Tests
       ReverseIt testReverseIt = new ReverseIt();
       Assert.AreEqual(false, testReverseIt.IsPalindrome("olleh", "hello"));
     }
+
+    [TestMethod]
+    public void IsReverseIt_CompareRevWord_True()
+    {
+      ReverseIt testReverseIt = new ReverseIt();
+      Assert.AreEqual(true, testReverseIt.IsPalindrome("racecar", "racecar"));
+    }
   }
 }
